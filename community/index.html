@@ -1,0 +1,607 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <title>SproutCore - Community</title>
+  <meta name="description" content="A framework for building fast, desktop caliber web applications." />
+  <meta name="viewport" content="width=960" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/modal.css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu|Allan:bold|Architects+Daughter" />
+  <script src="/js/libs/modernizr-1.7.min.js"></script>
+</head>
+<body id="community" class="green">
+  <script>
+    var match = document.cookie.match(/scColor=([^;]+)/);
+    document.body.className = (match && match[1]) || 'green';
+  </script>
+  <div id="wrap">
+    <header role="banner">
+      <div class="container">
+        <h1 id="logo">
+          <a href="/"><img src="/img/logo.png" alt="SproutCore" /></a>
+        </h1>
+        <nav role="navigation">
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="http://guides.sproutcore.com">Guides</a></li>
+            <li><a href="http://docs.sproutcore.com">Docs</a></li>
+            <li class='active'><a href="/community/">Community</a></li>
+            <li><a href="http://blog.sproutcore.com">Blog</a></li>
+          </ul>
+        </nav>
+        <form action="" role="search" onSubmit="return submitQuery()">
+          <input type="text" id="query-input" />
+          <input type="reset" value="Clear" />
+        </form>
+      </div>
+    </header>
+    <div id="main" role="main" class="container">
+      
+  <article role="main" class="container">
+    <h1>Our Community
+    
+      <ul id="action">
+        <li><a href="#" class="button primary" onclick="app.gotoInstall(); return false;"><span class="download">Download Latest</span></a></li>
+      </ul>
+    
+    </h1>
+    <div id="tabs">
+      <nav>
+  <ul>
+    
+    <li><a href="get-involved">Get Involved</a></li>
+    
+    <li><a href="user-groups">User Groups</a></li>
+    
+    <li><a href="events">Events</a></li>
+    
+    <li><a href="ecosystem">Ecosystem</a></li>
+    
+  </ul>
+</nav>
+
+
+      <div id="clip">
+        <div id="left" class="clip-border"></div>
+        <div id="right" class="clip-border"></div>
+        <div id="panel" style="display: none;">
+        <section id="get-involved">
+  <h1>Getting Involved With The SproutCore Community Is Easier Than You Think...</h1>
+  <div id="ipad">
+    <img src="/img/ipad-text.png" alt="Stay on top of things" class="instructions">
+    <div id="items">
+      <a href="http://groups.google.com/group/sproutcore?pli=1" class="button secondary red">Subscribe to the Mailing List</a>
+      <a href="http://blog.sproutcore.com/feed/" class="button secondary orange">Subscribe to the blog via rss</a>
+      <a href="http://twitter.com/sproutcore" class="button secondary aqua">Follow us on Twitter</a>
+      <a href="http://www.facebook.com/SproutCore" class="button secondary blue">Check us out on Facebook</a>
+    </div>
+    <img src="/img/ipad-shadow.png">
+  </div>
+  <div id="twitter">
+    <h2>What People Are Saying About Us</h2>
+    <div class="bottom-clip"></div>
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+    new TWTR.Widget({
+      version: 2,
+      type: 'faves',
+      rpp: 25,
+      interval: 3000,
+      title: '',
+      subject: '',
+      width: 400,
+      height: 300,
+      theme: {
+        shell: {
+          background: '#fbfbfb',
+          color: '#ffffff'
+        },
+        tweets: {
+          background: '#fbfbfb',
+          color: '#444444',
+          links: '#73b3f0'
+        }
+      },
+      features: {
+        scrollbar: false,
+        loop: true,
+        live: true,
+        hashtags: true,
+        timestamp: true,
+        avatars: true,
+        behavior: 'preloaded'
+      }
+    }).render().setUser('sproutcorefaves').start();
+    </script>
+  </div>
+  <div id="guides">
+    <h2>Contribute To The Guides Project</h2>
+    <p>The SproutCore documentation team welcomes any and all help from the community. If you are interested in contributing a guide, click below for more information.</p>
+    <a href="http://guides.sproutcore.com/contribute.html" class="button secondary">Contribute A Guide</a>
+  </div>
+  <div id="code">
+    <h2>Commit Your Code To The Framework</h2>
+    <p>Anyone that would like to help shape the SproutCore framework and contribute to the project is encouraged to do so. All code is open source and managed via GitHub.</p>
+    <a href="https://github.com/sproutcore/sproutcore/" class="button secondary">Submit Your Code</a>
+  </div>
+</section>
+<section id="user-groups">
+  <h1>User Groups Are A Great Way To Learn And Have Fun. Find One In Your City!</h1>
+  <div id="map">
+    <img src="/img/map.jpg" alt="Map of the United States" width="878" height="394" />
+    <div class="pin sf">
+      <div class="marker"></div>
+      <div class="hover">
+        <h3 class="title">SproutCore San Francisco Meetup</h3>
+        <div class="picker"></div>
+      </div>
+    </div>
+    <div class="pin la">
+      <div class="marker"></div>
+      <div class="hover">
+        <h3 class="title">SproutCore Los Angeles Meetup</h3>
+        <div class="picker"></div>
+      </div>
+    </div>
+    <div class="pin pro">
+      <div class="marker"></div>
+      <div class="hover">
+        <h3 class="title">SproutCore Provo Meetup</h3>
+        <div class="picker"></div>
+      </div>
+    </div>
+    <div class="pin aus">
+      <div class="marker"></div>
+      <div class="hover">
+        <h3 class="title">SproutCore Austin Meetup</h3>
+        <div class="picker"></div>
+      </div>
+    </div>
+    <div class="pin chi">
+      <div class="marker"></div>
+      <div class="hover">
+        <h3 class="title">SproutCore Chicago Meetup</h3>
+        <div class="picker"></div>
+      </div>
+    </div>
+    <div class="pin was">
+      <div class="marker"></div>
+      <div class="hover">
+        <h3 class="title">SproutCore Washington Meetup</h3>
+        <div class="picker"></div>
+      </div>
+    </div>
+    <div class="pin ny">
+      <div class="marker"></div>
+      <div class="hover">
+        <h3 class="title">SproutCore New York City Meetup</h3>
+        <div class="picker"></div>
+      </div>
+    </div>
+    <div class="pin bos">
+      <div class="marker"></div>
+      <div class="hover">
+        <h3 class="title">SproutCore Boston Meetup</h3>
+        <div class="picker"></div>
+      </div>
+    </div>
+    <p>Don't See Your City?</p>
+    <a href="#" class="button secondary large" onclick="app.openModal($('#local-meetup')); return false;"><span>Start A Local Meetup!</span></a>
+  </div>
+  <h2>Upcoming Meetups</h2>
+  <ul id="meetups">
+    <li><a href="http://www.meetup.com/sproutcore/" class="sf">San Francisco</a></li>
+    <li><a href="http://www.meetup.com/sproutcore-la/" class="la">Los Angeles</a></li>
+    <li><a href="http://www.meetup.com/sproutcore-nyc/" class="ny">New York</a></li>
+    <li><a href="http://www.meetup.com/sproutcore-chicago/" class="chi">Chicago</a></li>
+    <li><a href="http://www.meetup.com/sproutcore-dc/" class="was">Washington</a></li>
+    <li><a href="http://www.meetup.com/sproutcore-boston/" class="bos">Boston</a></li>
+    <li><a href="http://www.meetup.com/sproutcore-utah/" class="pro">Provo</a></li>
+    <li><a href="http://www.meetup.com/sproutcore-austin/" class="aus">Austin</a></li>
+    <li><a href="http://www.meetup.com/sproutcore-germany/" class="ber">Berlin</a></li>
+    <li><a href="http://www.meetup.com/sproutcorekl/" class="kl">Kuala Lumpur</a></li>
+    <li><a href="http://www.meetup.com/sproutcore-vancouver/" class="van">Vancouver</a></li>
+    <li class="soon"><strong>More Cities Soon!</strong></li>
+  </ul>
+</section>
+<section id="events">
+  <h1>Get Out There And Get Involved! Start By Selecting An Event From The Calendar.</h1>
+  <div id="calendar">
+    <div class="month-nav">
+      <button name="previous" class="previous">&lt;</button>
+      <span class="month-name">April 2011</span>
+      <button name="next" class="next">&gt;</button>
+    </div>
+    <div class="month-container"></div>
+  </div>
+  <div id="event-info">
+    <div id="event-0" class="event">
+      <h3 class="title">Facebook HTML5 Event</h3>
+      <h4>Palo Alto, CA  - Jan 26</h4>
+      <p>Charles Jolley gives a general introduction to SproutCore.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://www.facebook.com/event.php?eid=190070421018801" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-1" class="event">
+      <h3 class="title">Day of JS</h3>
+      <h4>Mountain View, CA  - Jan 27</h4>
+      <p>Yehuda Katz gives a general introduction to SproutCore and why it's the right choice for your app.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://dayofjs.com/" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-2" class="event">
+      <h3 class="title">DevNexus</h3>
+      <h4>Atlanta, GA  - Mar 21-22</h4>
+      <p>Yehuda Katz discusses SproutCore and using it to build multi-device web applications.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://www.devnexus.com/s/index" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-3" class="event">
+      <h3 class="title">jQuery Conf</h3>
+      <h4>Mountain View, CA  - Apr 16-17</h4>
+      <p>Yehuda Katz discussed techniques for managing large-scale applications, getting truth out of the DOM, and lessons learned from SproutCore.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://events.jquery.org/2011/sf-bay-area/schedule/" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-4" class="event">
+      <h3 class="title">Philly ETE</h3>
+      <h4>Philadelphia, PA  - Apr 27-28</h4>
+      <p>Yehuda Katz gives a general introduction to SproutCore and what makes it great.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://phillyemergingtech.com/2011" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-5" class="event">
+      <h3 class="title">jQuery Meetup Boston</h3>
+      <h4>Philadelphia, PA  - Apr 27-28</h4>
+      <p>Yehuda Katz gives a general introduction to SproutCore for jQuery developers.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://www.meetup.com/jQuery-Boston/events/16191792/" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-6" class="event">
+      <h3 class="title">BarCamp</h3>
+      <h4>Sarasota, FL  - Apr 30-May 1</h4>
+      <p>Roy Daniels talks about meeting user needs and expectations by creating desktop-like web applications using the SproutCore framework.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://bcsrq.com/" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-7" class="event">
+      <h3 class="title">JS Day Italy</h3>
+      <h4>Verona, Italy - May 11-12</h4>
+      <p>Johannes Fahrenkrug gives an introduction to the experience of working with the SproutCore and Cappucino frameworks, and the differences between them.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://www.jsday.it/2011/" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-8" class="event">
+      <h3 class="title">Web Directions</h3>
+      <h4>Portland, OR - May 12</h4>
+      <p>Yehuda Katz delivers a general introduction on SproutCore and tells you why you need to be using it for your next project.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://unplugged11.webdirections.org/" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-9" class="event">
+      <h3 class="title">RailsConf 2011</h3>
+      <h4>Baltimore, MD - May 18</h4>
+      <p>Greg Moeck talks about TDD in JavaScript and SproutCore.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://www.railsconf.com/" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-10" class="event">
+      <h3 class="title">Budapest.rb</h3>
+      <h4>Online - May 19</h4>
+      <p>Yehuda Katz reprises his talk from RailsConf, "Building Rails Apps for the Rich Client."</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://www.meetup.com/budapest-rb/" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-11" class="event">
+      <h3 class="title">Velocity 2011</h3>
+      <h4>Santa Clara, CA - June 15</h4>
+      <p>Yehuda Katz talks about writing fast client-side code.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://velocityconf.com/velocity2011" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-12" class="event">
+      <h3 class="title">GothamJS</h3>
+      <h4>New York, NY - July 9</h4>
+      <p>Yehuda Katz giving a talk "The Fallacy of Microlibs." He will provide an alternative approach to thinking about developing large JavaScript applications, the approach the SproutCore team is using for developing SproutCore 2.0.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://gothamjs.com/" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-13" class="event">
+      <h3 class="title">OSCON</h3>
+      <h4>Portland, OR - July 27</h4>
+      <p>Yehuda Katz gives a talk: "Building Web Applications in a Multi-Device World."</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://www.oscon.com/oscon2011" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-14" class="event">
+      <h3 class="title">re:build</h3>
+      <h4>Indianapolis, IN - July 29</h4>
+      <p>Yehuda Katz will be giving an introductory talk about SproutCore and the benefits of using it.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://rebuildconf.com/" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-15" class="event">
+      <h3 class="title">MobileJS Summit</h3>
+      <h4>Online - August 30</h4>
+      <p>Tom Dale will be giving a talk on Architecting State-Driven Applications with SproutCore 2.0. Tune in!</p>
+      <a href="http://www.environmentsforhumans.com/2011/mobile-javascript-summit/" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-16" class="event">
+      <h3 class="title">Strange Loop</h3>
+      <h4>St. Louis, MO - September 19</h4>
+      <p>Yehuda Katz will be giving a talk on building large-scale jQuery applications, and lessons learned from SproutCore.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="https://thestrangeloop.com" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-17" class="event">
+      <h3 class="title">Silicon Valley Code Camp</h3>
+      <h4>Los Altos Hills, CA - October 8</h4>
+      <p>Majd Taby will be giving a talk on building mobile web applications using SproutCore UI.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://siliconvalley-codecamp.com/Default.aspx" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-18" class="event">
+      <h3 class="title">San Francisco SproutCore Meetup</h3>
+      <h4>San Francisco, CA - July 12</h4>
+      <p>Majd Taby will be giving a talk on SproutCore UI, with a town hall to follow discussing community questions about SproutCore 2.0.</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://www.meetup.com/sproutcore/events/23045731/" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-19" class="event">
+      <h3 class="title">Vancouver SproutCore Meetup</h3>
+      <h4>Vancouver, BC - July 26</h4>
+      <p>Luis Sala will be building a demo SproutCore application; Tom Dale will be giving a remote presentation introducing SproutCore UI. Come to the inaugural meetup, the first in Canada!</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://www.meetup.com/SproutCore-Vancouver/events/23291001/" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+    <div id="event-20" class="event">
+      <h3 class="title">South Bay SproutCore Meetup</h3>
+      <h4>Sunnyvale, CA - August 17</h4>
+      <p>Majd Taby and Greg Moeck will be giving talks on SproutCore at our inaugural South Bay meetup!</p>
+      <div class="map-container">
+        <div class="map"></div>
+      </div>
+      <a href="http://www.meetup.com/sproutcore/events/27385451/" target="_blank" class="button secondary">Visit Event Website</a>
+    </div>
+  </div>
+</section>
+<section id="ecosystem">
+  <h1>A Vibrant Ecosystem Of Community Tools And Support.</h1>
+    <ul>
+      <li class="editors">
+        <h2>Editors and IDE's</h2>
+        <p>SproutCore developers use a variety of editors, including <a href="http://macromates.com/">Textmate</a>, <a href="http://www.vim.org/">VIM</a> and <a href="http://www.gnu.org/software/emacs/">Emacs</a>. For a more tailored experience, check out the <a href="https://github.com/sproutit/sproutcore-tmbundle">SproutCore Textmate Bundle</a>.</p>
+      </li>
+      <li class="hosting">
+        <h2>Hosting</h2>
+        <p>SproutCore apps build to a directory of static assets that can be deployed to any server. Hosting providers specifically targeting HTML5 apps will likely be best suited for SproutCore apps.</p>
+      </li>
+      <li class="support">
+        <h2>Support</h2>
+        <p>SproutCore support is currently offered by <a href="http://www.strobecorp.com/products-support/">Strobe</a> which employs several members of the <a href="/about/#tab=core-team">SproutCore Core Team</a>. </p>
+      </li>
+      <li class="consulting">
+        <h2>Consulting</h2>
+        <p>There are a number of major consulting firms building applications for Fortune 500 clients using SproutCore. <a href="http://www.appnovation.com/">Appnovation</a>, <a href="http://rivetlogic.com/">RivetLogic</a> and <a href="http://www.rothburysoftware.com/">Rothbury Software</a> are among them.</p>
+      </li>
+    </ul>
+</section>
+      </div>
+      </div>
+    </div>
+    <div id="tabs-back"></div>
+  </article>  
+
+    </div>
+    <div id="modals">
+      <section role="complementary" id="contact-us" class="modal-pane" style="display: none;">
+  <div class="modal-background" onclick="app.closeModal($('#contact-us')); return false;"></div>
+  <div class="modal-content" onclick="">
+    <div class="close-button"><a href="#" onclick="app.closeModal($('#contact-us')); return false;">&times;</a></div>
+    
+  <!-- Embed WUFOO Form -->
+  <script>
+    var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <script>
+    var r7x3q1 = new WufooForm();
+    r7x3q1.initialize({
+    'userName':'strobecorp',
+    'formHash':'r7x3q1',
+    'autoResize':true,
+
+    // Resize the wufoo iframe and content wrapper
+    'resizeDone': function(height) {
+      // In FF & IE, the first height is 0, in Webkit, the first height(s) are really big
+      // Wufoo also calls the resizeDone function of all its forms on the page when one of them resizes!
+      // Über hack: set the height to a good value unless it looks like a legitimate resize
+      if (height == 0 || height > 664) height = 588;
+
+      $('#wufooFormr7x3q1').attr('height', height);
+      $('#contact-us .modal-content').height(height);
+    },
+
+    'height':'588',
+    'ssl':false});
+    r7x3q1.display();
+  </script>
+  <!-- End Embed -->
+
+  </div>
+</section>
+<section role="complementary" id="local-meetup" class="modal-pane" style="display: none;">
+  <div class="modal-background" onclick="app.closeModal($('#local-meetup')); return false;"></div>
+  <div class="modal-content" onclick="">
+    <div class="close-button"><a href="#" onclick="app.closeModal($('#local-meetup')); return false;">&times;</a></div>
+    
+  <!-- Embed WUFOO Form -->
+  <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+  <script type="text/javascript">
+    var m7x3p9 = new WufooForm();
+    m7x3p9.initialize({
+    'userName':'strobecorp',
+    'formHash':'m7x3p9',
+    'autoResize':true,
+
+    // Resize the wufoo iframe and content wrapper
+    'resizeDone': function(height) {
+      // In FF & IE, the first height is 0, in Webkit, the first height(s) are really big
+      // Wufoo also calls the resizeDone function of all its forms on the page when one of them resizes!
+      // Über hack: set the height to a good value unless it looks like a legitimate resize
+      if (height == 0 || height > 664) height = 588;
+
+      $('#wufooFormm7x3p9').attr('height', height);
+      $('#local-meetup .modal-content').height(height);
+    },
+
+    'height':'588',
+    'ssl':false});
+    m7x3p9.display();
+  </script>
+  <!-- End Embed -->
+
+  </div>
+</section>
+<section role="complementary" id="core-team-modal" class="modal-pane" style="display: none;">
+  <div class="modal-background" onclick="app.closeModal($('#core-team-modal')); return false;"></div>
+  <div class="modal-content" onclick="">
+    <div class="close-button"><a href="#" onclick="app.closeModal($('#core-team-modal')); return false;">&times;</a></div>
+    
+  <div id="core-team-modal-content">
+    <!-- This will be replaced with the full-bio content -->
+  </div>
+
+  </div>
+</section>
+
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="col">
+        <a href="index.html"><img src="/img/logo_footer.png" alt="SproutCore" /></a>
+        <p id="license">
+          Copyright 2011 <a href="http://www.strobecorp.com">Strobe Inc</a>.
+          <br />
+          SproutCore framework is under MIT License.
+        </p>
+      </div>
+      <nav class="col">
+        <h1>Site Navigation</h1>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="http://docs.sproutcore.com">Docs</a></li>
+          <li><a href="http://blog.sproutcore.com">Blog</a></li>
+          <li><a href="#" onclick="app.gotoInstall(); return false;">Download</a></li>
+          <li><a href="/community/">Community</a></li>
+          <li><a href="https://github.com/sproutcore/sproutcore">GitHub</a></li>
+          <li><a href="#" onclick="app.openModal($('#contact-us')); return false;">Contact Us</a></li>
+          <li><a href="http://guides.sproutcore.com">Guides</a></li>
+        </ul>
+        <a href="http://www.w3.org/html/logo/"><img src="/img/html5_tech.png" alt="HTML5 Powered" /></a>
+      </nav>
+      <div class="col">
+        <h1>Get in Touch, Stay Informed</h1>
+        <ul class="social">
+          <li><a href="http://twitter.com/sproutcore"><img src="/img/twitter.png" alt="Twitter" /></a></li>
+          <li><a href="http://www.facebook.com/sproutcore"><img src="/img/facebook.png" alt="Facebook" /></a></li>
+          <li><a href="http://groups.google.com/group/sproutcore"><img src="/img/google.png" alt="Google Groups" /></a></li>
+					<li><a href="http://groups.google.com/group/sproutcore">Subscribe To Mailing List</a></li>
+        </ul>
+				<a href="http://eepurl.com/dK1-Y" target="_blank" id="newsletter" class="button secondary">Sign Up For Our Newsletter!</a>
+<!-- Commented out until we have mailchimp API integration.
+				<h2>Subscribe To Our Newsletter</h2>
+        <div id="subscribe">
+          <form>
+            <input type="text" name="email" />
+            <button name="subscribe">Sign Up</button>
+            <div class="processing"><img src="/img/spinner.gif"></div>
+            <div class="error"></div>
+          </form>
+        </div>
+-->
+      </div>
+      <a href="#wrap" class="top">Back To Top</a>
+    </div>
+  </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write("<script src='/js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+  <script>
+    jQuery(document).ready(function() {
+      setTimeout(function() {
+        jQuery("#get-involved").addClass('visible');
+      },
+      1);
+    });
+  </script>
+  <script src="/js/libs/jquery_bbq.js"></script>
+  <script src="/js/libs/jquery_cookie.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/modals.js"></script>
+  <script src="/js/calendar.js"></script>
+  <script src="/js/core_members.js"></script>
+  <script src="/js/tab_slider.js"></script>
+  <script src="/js/meetup_map.js"></script>
+
+  
+
+	<script>
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-19584397-1']);
+		_gaq.push(['_setDomainName', '.sproutcore.com']);
+		_gaq.push(['_setAllowHash', false]);
+	  _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</body>
+</html>
