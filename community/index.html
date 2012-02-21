@@ -27,8 +27,8 @@
         <nav role="navigation">
           <ul>
             <li><a href="/about/">About</a></li>
-            <li><a href="/guides/">Guides</a></li>
-            <li><a href="/docs/">Docs</a></li>
+            <li><a href="http://guides.sproutcore.com">Guides</a></li>
+            <li><a href="http://docs.sproutcore.com">Docs</a></li>
             <li class='active'><a href="/community/">Community</a></li>
             <li><a href="http://blog.sproutcore.com">Blog</a></li>
           </ul>
@@ -59,8 +59,6 @@
     
     <li><a href="events">Events</a></li>
     
-    <li><a href="ecosystem">Ecosystem</a></li>
-    
   </ul>
 </nav>
 
@@ -88,7 +86,8 @@
     <script>
     new TWTR.Widget({
       version: 2,
-      type: 'faves',
+      type: 'search',
+      search: 'sproutcore',
       rpp: 25,
       interval: 3000,
       title: '',
@@ -115,7 +114,7 @@
         avatars: true,
         behavior: 'preloaded'
       }
-    }).render().setUser('sproutcorefaves').start();
+    }).render().start();
     </script>
   </div>
   <div id="guides">
@@ -140,13 +139,13 @@
         <div class="picker"></div>
       </div>
     </div>
-    <div class="pin la">
+    <!--<div class="pin la">
       <div class="marker"></div>
       <div class="hover">
         <h3 class="title">SproutCore Los Angeles Meetup</h3>
         <div class="picker"></div>
       </div>
-    </div>
+    </div>-->
     <div class="pin pro">
       <div class="marker"></div>
       <div class="hover">
@@ -154,7 +153,7 @@
         <div class="picker"></div>
       </div>
     </div>
-    <div class="pin aus">
+    <!--<div class="pin aus">
       <div class="marker"></div>
       <div class="hover">
         <h3 class="title">SproutCore Austin Meetup</h3>
@@ -167,7 +166,7 @@
         <h3 class="title">SproutCore Chicago Meetup</h3>
         <div class="picker"></div>
       </div>
-    </div>
+    </div>-->
     <div class="pin was">
       <div class="marker"></div>
       <div class="hover">
@@ -195,13 +194,13 @@
   <h2>Upcoming Meetups</h2>
   <ul id="meetups">
     <li><a href="http://www.meetup.com/sproutcore/" class="sf">San Francisco</a></li>
-    <li><a href="http://www.meetup.com/sproutcore-la/" class="la">Los Angeles</a></li>
+    <!--<li><a href="http://www.meetup.com/sproutcore-la/" class="la">Los Angeles</a></li>-->
     <li><a href="http://www.meetup.com/sproutcore-nyc/" class="ny">New York</a></li>
-    <li><a href="http://www.meetup.com/sproutcore-chicago/" class="chi">Chicago</a></li>
+    <!--<li><a href="http://www.meetup.com/sproutcore-chicago/" class="chi">Chicago</a></li>-->
     <li><a href="http://www.meetup.com/sproutcore-dc/" class="was">Washington</a></li>
     <li><a href="http://www.meetup.com/sproutcore-boston/" class="bos">Boston</a></li>
     <li><a href="http://www.meetup.com/sproutcore-utah/" class="pro">Provo</a></li>
-    <li><a href="http://www.meetup.com/sproutcore-austin/" class="aus">Austin</a></li>
+    <!--<li><a href="http://www.meetup.com/sproutcore-austin/" class="aus">Austin</a></li>-->
     <li><a href="http://www.meetup.com/sproutcore-germany/" class="ber">Berlin</a></li>
     <li><a href="http://www.meetup.com/sproutcorekl/" class="kl">Kuala Lumpur</a></li>
     <li><a href="http://www.meetup.com/sproutcore-vancouver/" class="van">Vancouver</a></li>
@@ -416,7 +415,7 @@
     </div>
   </div>
 </section>
-<section id="ecosystem">
+<!--<section id="ecosystem">
   <h1>A Vibrant Ecosystem Of Community Tools And Support.</h1>
     <ul>
       <li class="editors">
@@ -436,7 +435,7 @@
         <p>There are a number of major consulting firms building applications for Fortune 500 clients using SproutCore. <a href="http://www.appnovation.com/">Appnovation</a>, <a href="http://rivetlogic.com/">RivetLogic</a> and <a href="http://www.rothburysoftware.com/">Rothbury Software</a> are among them.</p>
       </li>
     </ul>
-</section>
+</section>-->
       </div>
       </div>
     </div>
@@ -543,13 +542,13 @@
         <h1>Site Navigation</h1>
         <ul>
           <li><a href="/about/">About</a></li>
-          <li><a href="/docs/">Docs</a></li>
+          <li><a href="http://docs.sproutcore.com">Docs</a></li>
           <li><a href="http://blog.sproutcore.com">Blog</a></li>
           <li><a href="#" onclick="app.gotoInstall(); return false;">Download</a></li>
           <li><a href="/community/">Community</a></li>
           <li><a href="https://github.com/sproutcore/sproutcore">GitHub</a></li>
-          <li><a href="#" onclick="app.openModal($('#contact-us')); return false;">Contact Us</a></li>
-          <li><a href="/guides/">Guides</a></li>
+          <!--<li><a href="#" onclick="app.openModal($('#contact-us')); return false;">Contact Us</a></li>-->
+          <li><a href="http://guides.sproutcore.com">Guides</a></li>
         </ul>
         <a href="http://www.w3.org/html/logo/"><img src="/img/html5_tech.png" alt="HTML5 Powered" /></a>
       </nav>
@@ -561,7 +560,7 @@
           <li><a href="http://groups.google.com/group/sproutcore"><img src="/img/google.png" alt="Google Groups" /></a></li>
 					<li><a href="http://groups.google.com/group/sproutcore">Subscribe To Mailing List</a></li>
         </ul>
-				<a href="http://eepurl.com/dK1-Y" target="_blank" id="newsletter" class="button secondary">Sign Up For Our Newsletter!</a>
+				<!--<a href="http://eepurl.com/dK1-Y" target="_blank" id="newsletter" class="button secondary">Sign Up For Our Newsletter!</a>-->
 <!-- Commented out until we have mailchimp API integration.
 				<h2>Subscribe To Our Newsletter</h2>
         <div id="subscribe">
