@@ -80,56 +80,17 @@
 </section>-->
 <section>
   <h1>Installation</h1>
+
   <section>
-    <p>If you already do Ruby development on your Mac or would just like
-    to have greater flexibility, you can install the SproutCore Dev Tools
-    as a Ruby gem.</p>
-    <p>SproutCore's gem requires Ruby 1.9.3 or later. You can test your
-    system's installed version with <code>ruby -v</code>. If you have a
-    version prior to 1.9.3, follow these instructions to upgrade using
-    rvm (Ruby Version Manager). If you are already running ruby 1.9.3 or
-    later, skip to Step 3.</p>
-
-		<h2>Notes for installing command line developer tools</h2>
-    <div class='note'>
-			<p>
-				The command line developer tools required for installation are no
-        longer included by default with Xcode.
-			</p>
-
-      <p>
-				<strong>Note for OS 10.8 - Mountain Lion</strong><br>
-        Download separately from
-        <a href='http://stackoverflow.com/questions/9353444/how-to-use-install-gcc-on-mac-os-x-10-8-xcode-4-4'>within Xcode</a>
-        or directly from Apple's
-        <a href='https://developer.apple.com/downloads/index.action?name=for%20Xcode%20-'>Developer Site</a>.
-      </p>
-
-      <p>
-				<strong>Note for OS 10.9 - Mavericks</strong><br>
-        Install by running
-				<a href='http://www.computersnyou.com/2025/'><code>xcode-select --install</code></a>
-        <a href='http://railsapps.github.io/xcode-command-line-tools.html'>in a terminal</a>
-        or download directly from Apple's
-        <a href='https://developer.apple.com/downloads/index.action?name=command%20line'>Developer Site</a>.
-      </p>
-    </div>
-  </section>
-  <section>
-    <h1>Installing Ruby and SproutCore</h1>
+    <h1>Installing NodeJS SproutCore</h1>
     <ol class="steps">
       <li>
-        Install RVM along with Ruby 1.9.3.
-        <pre><code>$ \curl -L https://get.rvm.io | bash -s stable --autolibs=3 --ruby=1.9.3</code></pre>
-      </li>
-      <li>
-        Add the following to your ~/.bash_profile so the build tools
-        will be in your path.
-        <pre><code>[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session</code></pre>
+        Install NodeJS 4.x or higher by downloading the installer from
+        <a href="https://nodejs.org">https://nodejs.org</a>
       </li>
       <li>
         <strong>Install SproutCore:</strong> This part is easy.
-        <pre><code>$ gem install sproutcore</code></pre>
+        <pre><code>$ npm install -g sproutcore</code></pre>
       </li>
       <li><a href="http://guides.sproutcore.com/getting_started.html"
         class="button secondary">Proceed to

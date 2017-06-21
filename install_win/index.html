@@ -81,70 +81,19 @@
 <section>
   <h1>Installation</h1>
   <section>
-  <p>If you already do Ruby development on Windows or would just like
-    to have greater flexibility, you can install the SproutCore Dev
-    Tools as a Ruby gem. If you want to install Ruby, start on Part A.
-    If you already have a Ruby 1.9.3 installation, skip to Part B.</p>
+  <p>If you already do NodeJS development on Windows, you can install the SproutCore Dev
+    Tools as a NPM package. If you want to install NodeJS, start on Part A.
+    If you already have a NodeJS 4.x installation or higher, skip to Part B.</p>
   </section>
   <section>
-    <h1>Part A: Installing Ruby</h1>
-    <p>There are multiple options for installing Ruby on Windows. We
-    recommend using either the One-Click Ruby Installer or Cygwin with RVM.</p>
-  </section>
-  <section>
-    <h1>Easiest: One-Click Ruby Installer</h1>
-    <ol class="steps">
-      <li>First download and install Ruby 1.9.3 from http://rubyinstaller.org/downloads/.</li>
-      <li>Next open "Ruby-1.9.3-*/Command Prompt with Ruby" from your Start Menu.
-        (If you installed to your system $PATH, you can just open a normal command prompt.)</li>
-      <li>Continue to Part B.</li>
-    </ol>
-  </section>
-  <section>
-    <h1>Most Flexibility: Cygwin with RVM</h1>
-    <p>This option gives you the most flexibility but is also the most
-    work to set up.</p>
-    <section>
-      <h2>Install Cygwin</h2>
-      <ol class="steps">
-        <li>Begin by downloading the Cygwin setup.exe from
-        http://www.cygwin.com/</li>
-        <li>When selecting packages for Cygwin make sure to select the following:
-          <ul>
-            <li>Devel-&gt;gcc-core</li>
-            <li>Devel-&gt;gmake</li>
-            <li>Devel-&gt;gzlib-devel</li>
-            <li>Net-&gt;gcurl</li>
-            <li>Net-&gt;gopenss</li>
-            <li>Perl-&gt;gperl</li>
-            <li>Utils-&gt;gncurses</li>
-          </ul>
-        </li>
-        <li>
-        Next you'll need to set up proper SSL certs. To do so, run the
-        following code:
-          <pre><code>$ mkdir -p /usr/ssl/certs
-$ cd /usr/ssl/certs
-$ curl http://curl.haxx.se/ca/cacert.pem | awk 'split_after==1{n++;split_after=0} /-----END CERTIFICATE-----/ {split_after=1} {print > "cert" n ".pem"}'
-$ c_rehash</code></pre>
-        </li>
-      </ol>
-    </section>
-    <section>
-      <h2>Install RVM and Ruby</h2>
-      <ol class="steps">
-        <li>
-          Install RVM along with Ruby 1.9.3.
-          <pre><code>$ \curl -#L https://get.rvm.io | bash -s stable --autolibs=3 --ruby=1.9.3</code></pre>
-        </li>
-      </ol>
-    </section>
+    <h1>Part A: Installing NodeJS</h1>
+    <p>Install NodeJS 4.x or higher by using the installer from <a href="https://nodejs.org">https://nodejs.org</a>.</p>
   </section>
   <section>
     <h1>Part B: Installing SproutCore</h1>
     <ol class="steps">
       <li>This part is easy.
-        <pre><code>$ gem install sproutcore</code></pre>
+        <pre><code>$ npm install -g sproutcore</code></pre>
       </li>
       </li>
       <li><a href="http://guides.sproutcore.com/getting_started.html"
